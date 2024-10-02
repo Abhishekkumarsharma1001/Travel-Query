@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8fa;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .travel-assistant {
+    max-width: 600px;
+    margin: 20px auto; /* Add some margin at the top */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically on small screens */
+    gap: 10px; /* Add space between inputs */
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 96%; /* Make input fields full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  .submit-button {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button:disabled {
+    background-color: #95a5a6;
+  }
+  
+  .submit-button:hover:not(:disabled) {
+    background-color: #2980b9;
+  }
+  
+  .response-container {
+    margin-top: 20px;
+  }
+  
+  .recommendation-card {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .recommendation-card h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  .recommendation-content {
+    color: #34495e;
+    line-height: 1.6;
+  }
+  
+  .recommendation-content ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .recommendation-content li {
+    margin-bottom: 8px;
+  }
+  
+  .recommendation-content strong {
+    color: #2980b9; /* Strong text color */
+  }
+  
+  .recommendation-content em {
+    color: #7f8c8d; /* Emphasized text color */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .input-container {
+      flex-direction: column; /* Stack inputs vertically */
+      gap: 10px; /* Space between inputs */
+    }
+  
+    .input-field {
+      width: 92%; /* Full width on smaller screens */
+      padding: 12px; /* Increase padding for better touch targets */
+    }
+    .submit-button {
+      width: 100%; /* Full width on smaller screens */
+      padding: 12px; /* Increase padding for better touch targets */
+    }
+  
+    .title {
+      font-size: 1.5rem; /* Reduce title font size on smaller screens */
+    }
+  
+    .recommendation-card {
+      padding: 15px; /* Reduce padding in recommendation card */
+    }
+  
+    .recommendation-card h3 {
+      font-size: 1.25rem; /* Reduce size of heading in the card */
+    }
+  
+    .recommendation-content {
+      font-size: 0.9rem; /* Reduce font size of content */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.2rem; /* Further reduce title size */
+    }
+  
+    .recommendation-card h3 {
+      font-size: 1rem; /* Further reduce heading size */
+    }
+  
+    .recommendation-content {
+      font-size: 0.85rem; /* Further reduce content font size */
+    }
+  }
+  
